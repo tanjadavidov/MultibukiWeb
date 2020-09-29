@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="wcfMultibuki" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/Multibuki/MultibukiWcf/WcfMultibuki/wcfMultibuki.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/Multibuki/MultibukiWcf/WcfMultibuki/wcfMultibuki.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/Multibuki/MultibukiWcf/WcfMultibuki/wcfMultibuki.svc?xsd=xsd2" namespace="http://tempuri.org/dsUlaz.xsd" />
+      <xsd:import schemaLocation="http://localhost/Multibuki/MultibukiWcf/WcfMultibuki/wcfMultibuki.svc?xsd=xsd3" />
+      <xsd:import schemaLocation="http://localhost/Multibuki/MultibukiWcf/WcfMultibuki/wcfMultibuki.svc?xsd=xsd4" namespace="http://tempuri.org/dsIzlaz.xsd" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IwcfMultibuki_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoWork" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_KorisnikPrijava_InputMessage">
+    <wsdl:part name="parameters" element="tns:KorisnikPrijava" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_KorisnikPrijava_OutputMessage">
+    <wsdl:part name="parameters" element="tns:KorisnikPrijavaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_KorisnikUnos_InputMessage">
+    <wsdl:part name="parameters" element="tns:KorisnikUnos" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_KorisnikUnos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:KorisnikUnosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_VratiTipPosPar_InputMessage">
+    <wsdl:part name="parameters" element="tns:VratiTipPosPar" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_VratiTipPosPar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VratiTipPosParResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_VratiTipServisa_InputMessage">
+    <wsdl:part name="parameters" element="tns:VratiTipServisa" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_VratiTipServisa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VratiTipServisaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_VratiFirmaKorisnik_InputMessage">
+    <wsdl:part name="parameters" element="tns:VratiFirmaKorisnik" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_VratiFirmaKorisnik_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VratiFirmaKorisnikResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_VratiFunkcijuZaKorisnika_InputMessage">
+    <wsdl:part name="parameters" element="tns:VratiFunkcijuZaKorisnika" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_VratiFunkcijuZaKorisnika_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VratiFunkcijuZaKorisnikaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_KorisnikPravoNaFunkciju_InputMessage">
+    <wsdl:part name="parameters" element="tns:KorisnikPravoNaFunkciju" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_KorisnikPravoNaFunkciju_OutputMessage">
+    <wsdl:part name="parameters" element="tns:KorisnikPravoNaFunkcijuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_KorisnikPromenaPodataka_InputMessage">
+    <wsdl:part name="parameters" element="tns:KorisnikPromenaPodataka" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_KorisnikPromenaPodataka_OutputMessage">
+    <wsdl:part name="parameters" element="tns:KorisnikPromenaPodatakaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_VratiSliku_InputMessage">
+    <wsdl:part name="parameters" element="tns:VratiSliku" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_VratiSliku_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VratiSlikuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_ObrisiSliku_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObrisiSliku" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_ObrisiSliku_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObrisiSlikuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_PromenaSlike_InputMessage">
+    <wsdl:part name="parameters" element="tns:PromenaSlike" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_PromenaSlike_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PromenaSlikeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_GetTreeViewItems_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTreeViewItems" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_GetTreeViewItems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTreeViewItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_VratiVestDetaljno_InputMessage">
+    <wsdl:part name="parameters" element="tns:VratiVestDetaljno" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_VratiVestDetaljno_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VratiVestDetaljnoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_VratiSelectZaIDVest_InputMessage">
+    <wsdl:part name="parameters" element="tns:VratiSelectZaIDVest" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_VratiSelectZaIDVest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VratiSelectZaIDVestResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_VratiKorisniLinkDetaljno_InputMessage">
+    <wsdl:part name="parameters" element="tns:VratiKorisniLinkDetaljno" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_VratiKorisniLinkDetaljno_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VratiKorisniLinkDetaljnoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_VratiUlogu_InputMessage">
+    <wsdl:part name="parameters" element="tns:VratiUlogu" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_VratiUlogu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VratiUloguResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_VratiKorisnika_InputMessage">
+    <wsdl:part name="parameters" element="tns:VratiKorisnika" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_VratiKorisnika_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VratiKorisnikaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_PromenaPravaKorisnika_InputMessage">
+    <wsdl:part name="parameters" element="tns:PromenaPravaKorisnika" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_PromenaPravaKorisnika_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PromenaPravaKorisnikaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_RestartLozinke_InputMessage">
+    <wsdl:part name="parameters" element="tns:RestartLozinke" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_RestartLozinke_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RestartLozinkeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_FirmaKorisnikPrikazi_InputMessage">
+    <wsdl:part name="parameters" element="tns:FirmaKorisnikPrikazi" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_FirmaKorisnikPrikazi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FirmaKorisnikPrikaziResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_VratiPoslovniPartner_InputMessage">
+    <wsdl:part name="parameters" element="tns:VratiPoslovniPartner" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_VratiPoslovniPartner_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VratiPoslovniPartnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_VratiMesto_InputMessage">
+    <wsdl:part name="parameters" element="tns:VratiMesto" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_VratiMesto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VratiMestoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_PoslovniPartnerPromenaPodataka_InputMessage">
+    <wsdl:part name="parameters" element="tns:PoslovniPartnerPromenaPodataka" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_PoslovniPartnerPromenaPodataka_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PoslovniPartnerPromenaPodatakaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_VratiSprat_InputMessage">
+    <wsdl:part name="parameters" element="tns:VratiSprat" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_VratiSprat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VratiSpratResponse" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_VratiArtikal_InputMessage">
+    <wsdl:part name="parameters" element="tns:VratiArtikal" />
+  </wsdl:message>
+  <wsdl:message name="IwcfMultibuki_VratiArtikal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VratiArtikalResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IwcfMultibuki">
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfMultibuki/DoWork" message="tns:IwcfMultibuki_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfMultibuki/DoWorkResponse" message="tns:IwcfMultibuki_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="KorisnikPrijava">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfMultibuki/KorisnikPrijava" message="tns:IwcfMultibuki_KorisnikPrijava_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfMultibuki/KorisnikPrijavaResponse" message="tns:IwcfMultibuki_KorisnikPrijava_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="KorisnikUnos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfMultibuki/KorisnikUnos" message="tns:IwcfMultibuki_KorisnikUnos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfMultibuki/KorisnikUnosResponse" message="tns:IwcfMultibuki_KorisnikUnos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VratiTipPosPar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfMultibuki/VratiTipPosPar" message="tns:IwcfMultibuki_VratiTipPosPar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfMultibuki/VratiTipPosParResponse" message="tns:IwcfMultibuki_VratiTipPosPar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VratiTipServisa">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfMultibuki/VratiTipServisa" message="tns:IwcfMultibuki_VratiTipServisa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfMultibuki/VratiTipServisaResponse" message="tns:IwcfMultibuki_VratiTipServisa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VratiFirmaKorisnik">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfMultibuki/VratiFirmaKorisnik" message="tns:IwcfMultibuki_VratiFirmaKorisnik_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfMultibuki/VratiFirmaKorisnikResponse" message="tns:IwcfMultibuki_VratiFirmaKorisnik_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VratiFunkcijuZaKorisnika">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfMultibuki/VratiFunkcijuZaKorisnika" message="tns:IwcfMultibuki_VratiFunkcijuZaKorisnika_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfMultibuki/VratiFunkcijuZaKorisnikaResponse" message="tns:IwcfMultibuki_VratiFunkcijuZaKorisnika_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="KorisnikPravoNaFunkciju">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfMultibuki/KorisnikPravoNaFunkciju" message="tns:IwcfMultibuki_KorisnikPravoNaFunkciju_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfMultibuki/KorisnikPravoNaFunkcijuResponse" message="tns:IwcfMultibuki_KorisnikPravoNaFunkciju_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="KorisnikPromenaPodataka">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfMultibuki/KorisnikPromenaPodataka" message="tns:IwcfMultibuki_KorisnikPromenaPodataka_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfMultibuki/KorisnikPromenaPodatakaResponse" message="tns:IwcfMultibuki_KorisnikPromenaPodataka_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VratiSliku">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfMultibuki/VratiSliku" message="tns:IwcfMultibuki_VratiSliku_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfMultibuki/VratiSlikuResponse" message="tns:IwcfMultibuki_VratiSliku_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObrisiSliku">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfMultibuki/ObrisiSliku" message="tns:IwcfMultibuki_ObrisiSliku_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfMultibuki/ObrisiSlikuResponse" message="tns:IwcfMultibuki_ObrisiSliku_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PromenaSlike">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfMultibuki/PromenaSlike" message="tns:IwcfMultibuki_PromenaSlike_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfMultibuki/PromenaSlikeResponse" message="tns:IwcfMultibuki_PromenaSlike_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTreeViewItems">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfMultibuki/GetTreeViewItems" message="tns:IwcfMultibuki_GetTreeViewItems_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfMultibuki/GetTreeViewItemsResponse" message="tns:IwcfMultibuki_GetTreeViewItems_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VratiVestDetaljno">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfMultibuki/VratiVestDetaljno" message="tns:IwcfMultibuki_VratiVestDetaljno_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfMultibuki/VratiVestDetaljnoResponse" message="tns:IwcfMultibuki_VratiVestDetaljno_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VratiSelectZaIDVest">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfMultibuki/VratiSelectZaIDVest" message="tns:IwcfMultibuki_VratiSelectZaIDVest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfMultibuki/VratiSelectZaIDVestResponse" message="tns:IwcfMultibuki_VratiSelectZaIDVest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VratiKorisniLinkDetaljno">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfMultibuki/VratiKorisniLinkDetaljno" message="tns:IwcfMultibuki_VratiKorisniLinkDetaljno_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfMultibuki/VratiKorisniLinkDetaljnoResponse" message="tns:IwcfMultibuki_VratiKorisniLinkDetaljno_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VratiUlogu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfMultibuki/VratiUlogu" message="tns:IwcfMultibuki_VratiUlogu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfMultibuki/VratiUloguResponse" message="tns:IwcfMultibuki_VratiUlogu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VratiKorisnika">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfMultibuki/VratiKorisnika" message="tns:IwcfMultibuki_VratiKorisnika_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfMultibuki/VratiKorisnikaResponse" message="tns:IwcfMultibuki_VratiKorisnika_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PromenaPravaKorisnika">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfMultibuki/PromenaPravaKorisnika" message="tns:IwcfMultibuki_PromenaPravaKorisnika_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfMultibuki/PromenaPravaKorisnikaResponse" message="tns:IwcfMultibuki_PromenaPravaKorisnika_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RestartLozinke">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfMultibuki/RestartLozinke" message="tns:IwcfMultibuki_RestartLozinke_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfMultibuki/RestartLozinkeResponse" message="tns:IwcfMultibuki_RestartLozinke_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FirmaKorisnikPrikazi">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfMultibuki/FirmaKorisnikPrikazi" message="tns:IwcfMultibuki_FirmaKorisnikPrikazi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfMultibuki/FirmaKorisnikPrikaziResponse" message="tns:IwcfMultibuki_FirmaKorisnikPrikazi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VratiPoslovniPartner">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfMultibuki/VratiPoslovniPartner" message="tns:IwcfMultibuki_VratiPoslovniPartner_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfMultibuki/VratiPoslovniPartnerResponse" message="tns:IwcfMultibuki_VratiPoslovniPartner_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VratiMesto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfMultibuki/VratiMesto" message="tns:IwcfMultibuki_VratiMesto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfMultibuki/VratiMestoResponse" message="tns:IwcfMultibuki_VratiMesto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PoslovniPartnerPromenaPodataka">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfMultibuki/PoslovniPartnerPromenaPodataka" message="tns:IwcfMultibuki_PoslovniPartnerPromenaPodataka_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfMultibuki/PoslovniPartnerPromenaPodatakaResponse" message="tns:IwcfMultibuki_PoslovniPartnerPromenaPodataka_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VratiSprat">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfMultibuki/VratiSprat" message="tns:IwcfMultibuki_VratiSprat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfMultibuki/VratiSpratResponse" message="tns:IwcfMultibuki_VratiSprat_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VratiArtikal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IwcfMultibuki/VratiArtikal" message="tns:IwcfMultibuki_VratiArtikal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IwcfMultibuki/VratiArtikalResponse" message="tns:IwcfMultibuki_VratiArtikal_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IwcfMultibuki" type="tns:IwcfMultibuki">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DoWork">
+      <soap:operation soapAction="http://tempuri.org/IwcfMultibuki/DoWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KorisnikPrijava">
+      <soap:operation soapAction="http://tempuri.org/IwcfMultibuki/KorisnikPrijava" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KorisnikUnos">
+      <soap:operation soapAction="http://tempuri.org/IwcfMultibuki/KorisnikUnos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VratiTipPosPar">
+      <soap:operation soapAction="http://tempuri.org/IwcfMultibuki/VratiTipPosPar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VratiTipServisa">
+      <soap:operation soapAction="http://tempuri.org/IwcfMultibuki/VratiTipServisa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VratiFirmaKorisnik">
+      <soap:operation soapAction="http://tempuri.org/IwcfMultibuki/VratiFirmaKorisnik" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VratiFunkcijuZaKorisnika">
+      <soap:operation soapAction="http://tempuri.org/IwcfMultibuki/VratiFunkcijuZaKorisnika" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KorisnikPravoNaFunkciju">
+      <soap:operation soapAction="http://tempuri.org/IwcfMultibuki/KorisnikPravoNaFunkciju" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KorisnikPromenaPodataka">
+      <soap:operation soapAction="http://tempuri.org/IwcfMultibuki/KorisnikPromenaPodataka" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VratiSliku">
+      <soap:operation soapAction="http://tempuri.org/IwcfMultibuki/VratiSliku" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObrisiSliku">
+      <soap:operation soapAction="http://tempuri.org/IwcfMultibuki/ObrisiSliku" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PromenaSlike">
+      <soap:operation soapAction="http://tempuri.org/IwcfMultibuki/PromenaSlike" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTreeViewItems">
+      <soap:operation soapAction="http://tempuri.org/IwcfMultibuki/GetTreeViewItems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VratiVestDetaljno">
+      <soap:operation soapAction="http://tempuri.org/IwcfMultibuki/VratiVestDetaljno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VratiSelectZaIDVest">
+      <soap:operation soapAction="http://tempuri.org/IwcfMultibuki/VratiSelectZaIDVest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VratiKorisniLinkDetaljno">
+      <soap:operation soapAction="http://tempuri.org/IwcfMultibuki/VratiKorisniLinkDetaljno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VratiUlogu">
+      <soap:operation soapAction="http://tempuri.org/IwcfMultibuki/VratiUlogu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VratiKorisnika">
+      <soap:operation soapAction="http://tempuri.org/IwcfMultibuki/VratiKorisnika" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PromenaPravaKorisnika">
+      <soap:operation soapAction="http://tempuri.org/IwcfMultibuki/PromenaPravaKorisnika" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RestartLozinke">
+      <soap:operation soapAction="http://tempuri.org/IwcfMultibuki/RestartLozinke" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FirmaKorisnikPrikazi">
+      <soap:operation soapAction="http://tempuri.org/IwcfMultibuki/FirmaKorisnikPrikazi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VratiPoslovniPartner">
+      <soap:operation soapAction="http://tempuri.org/IwcfMultibuki/VratiPoslovniPartner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VratiMesto">
+      <soap:operation soapAction="http://tempuri.org/IwcfMultibuki/VratiMesto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PoslovniPartnerPromenaPodataka">
+      <soap:operation soapAction="http://tempuri.org/IwcfMultibuki/PoslovniPartnerPromenaPodataka" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VratiSprat">
+      <soap:operation soapAction="http://tempuri.org/IwcfMultibuki/VratiSprat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VratiArtikal">
+      <soap:operation soapAction="http://tempuri.org/IwcfMultibuki/VratiArtikal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wcfMultibuki">
+    <wsdl:port name="BasicHttpBinding_IwcfMultibuki" binding="tns:BasicHttpBinding_IwcfMultibuki">
+      <soap:address location="http://localhost/Multibuki/MultibukiWcf/WcfMultibuki/wcfMultibuki.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

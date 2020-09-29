@@ -1,0 +1,166 @@
+﻿body
+{
+      font-family: Verdana;
+      font-size: 10pt;
+      
+   
+}
+
+
+/* Basic
+body
+{
+      font-family: "trebuchet ms", sans-serif;
+      font-size: 10pt;
+      background-color: #fff;
+      color: #555;
+    font-weight: 700;
+}
+
+
+
+background-color:#D2DEEC
+*/
+*
+{
+      margin: 0px 0 0 0;
+      padding: 0;
+}
+
+h1,h2
+{
+      z-index:50;
+      position:relative;
+}
+
+
+a
+{
+      color: #007788;
+      text-decoration: underline;
+}
+
+a:hover
+{
+      text-decoration: none;
+}
+
+.clear
+{
+      clear: both;
+}
+
+/* Outer */
+
+.AutoExtender
+{
+    font-family: Verdana, Helvetica, sans-serif; 
+    font-size: .8em;
+
+    font-weight: normal; 
+    border:solid 1px #006699;
+
+    line-height:24px; 
+    padding:2px;
+    background-color:White; 
+}
+
+.AutoExtenderList
+{
+    border-bottom:dotted 1px #006699; 
+    cursor:pointer;
+    color:Maroon;
+    z-index:100;
+}
+
+.AutoExtenderHighlight
+{
+    color:#c8c8c8; 
+    background-color:#006699;
+    cursor:pointer; 
+}
+
+.grayText
+{
+      font-color: #c9c9c9;
+      font-style:italic;
+}
+
+
+.AutoComplete_ListItemHiliteText{background-color:Yellow;}
+
+
+.buttonBasic80
+{
+    border: 1px outset #507CAD; 
+    filter: progid:DXImageTransform.Microsoft.Gradient( GradientType=0, StartColorStr='#CBD8E7', EndColorStr='white');
+    color: #002079; 
+    font-family: verdana;
+    width: 80px;
+}
+
+.buttonBasic100
+{
+    border: 1px outset #507CAD; 
+    filter: progid:DXImageTransform.Microsoft.Gradient( GradientType=0, StartColorStr='#CBD8E7', EndColorStr='white');
+    color: #002079; 
+    font-family: verdana;
+    width: 100px;
+
+}
+
+.buttonBasic130
+{
+    border: 1px outset #507CAD; 
+    filter: progid:DXImageTransform.Microsoft.Gradient( GradientType=0, StartColorStr='#CBD8E7', EndColorStr='white');
+    color: #002079; 
+    font-family: verdana;
+    width: 130px;
+}
+
+.buttonBasic180
+{
+    border: 1px outset #507CAD; 
+    filter: progid:DXImageTransform.Microsoft.Gradient( GradientType=0, StartColorStr='#CBD8E7', EndColorStr='white');
+    color: #002079; 
+    font-family: verdana;
+    width: 180px;
+}
+
+.buttonBasic220
+{
+    border: 1px outset #507CAD; 
+    filter: progid:DXImageTransform.Microsoft.Gradient( GradientType=0, StartColorStr='#CBD8E7', EndColorStr='white');
+    color: #002079; 
+    font-family: verdana;
+    width: 220px;
+}
+.buttonBasic40
+{
+    border: 1px outset #507CAD; 
+    filter: progid:DXImageTransform.Microsoft.Gradient( GradientType=0, StartColorStr='#CBD8E7', EndColorStr='white');
+    color: #002079; 
+    font-family: verdana;
+    width: 40px;
+}
+.buttonBasic101
+{
+    border: 1px outset #507CAD; 
+    filter: progid:DXImageTransform.Microsoft.Gradient( GradientType=1, StartColorStr='#4F7AB0', EndColorStr='white');
+    color: #002079; 
+    font-family: verdana;
+    font-weight:bold;
+    width: 100px;
+
+}
+.buttonBasic131
+{
+    border: 1px outset #507CAD; 
+    filter: progid:DXImageTransform.Microsoft.Gradient( GradientType=1, StartColorStr='#4F7AB0', EndColorStr='white');
+    color: #002079; 
+    font-family: verdana;
+    font-weight:bold;
+    width: 130px;
+
+}
+

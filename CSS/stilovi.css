@@ -1,0 +1,580 @@
+﻿
+/* Sevetlo: */
+.dugme70
+{
+    background: #ae97db;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #000000;
+    font-size: 11px;
+    border: solid #66023c 1px;
+    width: 70px;
+    height: 24px;
+}
+.dugme70:hover
+{
+    background: #66023c;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 11px;
+    border: solid #66023c 1px;
+    width: 70px;
+    height: 24px;
+}
+.dugme70[disabled]
+{
+    background: #aec2e5;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #005094;
+    font-size: 11px;
+    border: solid #b3e6f9  1px;
+    width: 70px;
+    height: 24px;
+}
+
+.dugme100
+{
+    background: #ae97db;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #000000;
+    font-size: 11px;
+    border: solid #66023c 1px;
+    width: 100px;
+    height: 24px;
+}
+    .dugme100:hover {
+        background: #8a71c1; /* #66023c;*/
+        border-radius: 6px;
+        font-family: Arial;
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 11px;
+        border: solid #66023c 1px;
+        width: 100px;
+        height: 24px;
+    }
+    .dugme100[disabled] {
+        background: #dacef2;
+        border-radius: 6px;
+        font-family: Arial;
+        font-weight: bold;
+        color: #005094;
+        font-size: 11px;
+        border: solid #b3e6f9 1px;
+        width: 100px;
+        height: 24px;
+    }
+
+.dugme150
+{
+    background: #ae97db;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #000000;
+    font-size: 11px;
+    border: solid #66023c 1px;
+    width: 150px;
+    height: 24px;
+}
+    .dugme150:hover {
+        background: #8a71c1;
+        border-radius: 6px;
+        font-family: Arial;
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 11px;
+        border: solid #66023c 1px;
+        width: 150px;
+        height: 24px;
+    }
+.dugme150[disabled]
+{
+    background: #aec2e5;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #005094;
+    font-size: 11px;
+    border: solid #b3e6f9  1px;
+    width: 150px;
+    height: 24px;
+}
+
+.dugme200
+{
+    background-color: #ae97db;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #000000;
+    font-size: 11px;
+    border: solid #66023c 1px;
+    width: 200px;
+    height: 24px;
+}
+    .dugme200:hover {
+        background-color: #9983c9;
+        border-radius: 6px;
+        font-family: Arial;
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 11px;
+        border: solid #66023c 1px;
+        width: 200px;
+        height: 24px;
+    }
+.dugme200[disabled]
+{
+    background: #aec2e5;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #005094;
+    font-size: 11px;
+    border: solid #b3e6f9  1px;
+    width: 200px;
+    height: 24px;
+}
+
+
+.dugme250
+{
+    background: #ae97db;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #000000;
+    font-size: 11px;
+    border: solid #66023c 1px;
+    width: 250px;
+    height: 24px;
+}
+.dugme250:hover
+{
+    background: #66023c;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 11px;
+    border: solid #66023c 1px;
+    width: 250px;
+    height: 24px;
+}
+.dugme250[disabled]
+{
+    background: #aec2e5;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #005094;
+    font-size: 11px;
+    border: solid #b3e6f9  1px;
+    width: 250px;
+    height: 24px;
+}
+
+.dugme300
+{
+    background: #ae97db;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #000000;
+    font-size: 11px;
+    border: solid #66023c 1px;
+    width: 300px;
+    height: 24px;
+
+}
+    .dugme300:hover {
+        background: #8a71c1;
+        border-radius: 6px;
+        font-family: Arial;
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 11px;
+        border: solid #66023c 1px;
+        width: 300px;
+        height: 24px;
+    }
+.dugme300[disabled]
+{
+    background: #aec2e5;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #005094;
+    font-size: 11px;
+    border: solid #b3e6f9  1px;
+    width: 300px;
+    height: 24px;
+}
+
+.dugme350
+{
+    background: #ae97db;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #000000;
+    font-size: 11px;
+    border: solid #66023c 1px;
+    width: 350px;
+    height: 24px;
+}
+.dugme350:hover
+{
+    background: #66023c;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 11px;
+    border: solid #66023c 1px;
+    width: 350px;
+    height: 24px;
+}
+.dugme350[disabled]
+{
+    background: #aec2e5;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #005094;
+    font-size: 11px;
+    border: solid #b3e6f9  1px;
+    width: 350px;
+    height: 24px;
+}
+
+.dugme400
+{
+    background: #ae97db;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #000000;
+    font-size: 11px;
+    border: solid #66023c 1px;
+    width: 400px;
+    height: 24px;
+}
+.dugme400:hover
+{
+    background: #66023c;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 11px;
+    border: solid #66023c 1px;
+    width: 400px;
+    height: 24px;
+}
+.dugme400[disabled]
+{
+    background: #aec2e5;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #005094;
+    font-size: 11px;
+    border: solid #b3e6f9  1px;
+    width: 400px;
+    height: 24px;
+}
+
+
+/* Tamno: */
+.dugmeTamno70
+{
+    background: #006155;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 11px;
+    border: solid #006155 1px;
+    width: 70px;
+    height: 24px;
+}
+.dugmeTamno70:hover
+{
+    background: #bdfff7;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #000000;
+    font-size: 11px;
+    border: solid black 1px;
+    width: 70px;
+    height: 24px;
+}
+.dugmeTamno70[disabled]
+{
+    background: #aec2e5;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #005094;
+    font-size: 11px;
+    border: solid #b3e6f9  1px;
+    width: 70px;
+    height: 24px;
+}
+
+.dugmeTamno100
+{
+    background: #006155;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 11px;
+    border: solid #006155 1px;
+    width: 100px;
+    height: 24px;
+}
+.dugmeTamno100:hover
+{
+    background: #bdfff7;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #000000;
+    font-size: 11px;
+    border: solid black 1px;
+    width: 100px;
+    height: 24px;
+}
+.dugmeTamno100[disabled]
+{
+    background: #aec2e5;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #005094;
+    font-size: 11px;
+    border: solid #b3e6f9  1px;
+    width: 100px;
+    height: 24px;
+}
+
+.dugmeTamno150
+{
+    background: #006155;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 11px;
+    border: solid #006155 1px;
+    width: 150px;
+    height: 24px;
+}
+.dugmeTamno150:hover
+{
+    background: #bdfff7;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #000000;
+    font-size: 11px;
+    border: solid black 1px;
+    width: 150px;
+    height: 24px;
+}
+.dugmeTamno150[disabled]
+{
+    background: #aec2e5;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #005094;
+    font-size: 11px;
+    border: solid #b3e6f9  1px;
+    width: 150px;
+    height: 24px;
+}
+
+.dugmeTamno200
+{
+    background: #006155;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 11px;
+    border: solid #006155 1px;
+    width: 200px;
+    height: 24px;
+}
+.dugmeTamno200:hover
+{
+    background: #bdfff7;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #000000;
+    font-size: 11px;
+    border: solid black 1px;
+    width: 200px;
+    height: 24px;
+}
+.dugmeTamno200[disabled]
+{
+    background: #aec2e5;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #005094;
+    font-size: 11px;
+    border: solid #b3e6f9  1px;
+    width: 200px;
+    height: 24px;
+}
+
+.dugmeTamno250
+{
+    background: #006155;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 11px;
+    border: solid #006155 1px;
+    width: 250px;
+    height: 24px;
+}
+.dugmeTamno250:hover
+{
+    background: #bdfff7;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #000000;
+    font-size: 11px;
+    border: solid black 1px;
+    width: 250px;
+    height: 24px;
+}
+.dugmeTamno250[disabled]
+{
+    background: #aec2e5;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #005094;
+    font-size: 11px;
+    border: solid #b3e6f9  1px;
+    width: 250px;
+    height: 24px;
+}
+
+.dugmeTamno300
+{
+    background: #006155;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 11px;
+    border: solid #006155 1px;
+    width: 300px;
+    height: 24px;
+}
+.dugmeTamno300:hover
+{
+    background: #bdfff7;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #000000;
+    font-size: 11px;
+    border: solid black 1px;
+    width: 300px;
+    height: 24px;
+}
+.dugmeTamno300[disabled]
+{
+    background: #aec2e5;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #005094;
+    font-size: 11px;
+    border: solid #b3e6f9  1px;
+    width: 300px;
+    height: 24px;
+}
+
+
+
+
+tr.trMaterKontrole
+{
+    height: 15px;
+    overflow: hidden;
+    vertical-align: top;
+    
+}
+
+/*
+body
+{
+    font-family: Arial;
+   
+}*/
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+
+
+#OsnovniMenu a {
+    color: white !important;
+    font-weight: 600 !important;
+    text-decoration: none;
+    display: block;
+    white-space: normal !important;
+}
+
+
+.list-group-flush:last-child .list-group-item:last-child {
+    margin-bottom: unset !important;
+    border-bottom: unset !important;
+}
+
+.slova {
+    font-weight: 600;
+}
+
+
+
+
+
+
+.search {
+  /*  background: url(find.png) no-repeat;
+    padding-left: 18px;*/
+    border: 1px solid #ccc;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: gray;
+    font-size: 11px;
+}   
+
+

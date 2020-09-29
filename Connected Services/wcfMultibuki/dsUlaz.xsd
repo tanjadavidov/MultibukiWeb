@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/dsUlaz.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/dsUlaz.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/dsUlaz.xsd" id="dsUlaz" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="dsUlaz">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtaaa">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="idUloga" type="xs:int" />
+              <xs:element minOccurs="0" name="idFunkcija" type="xs:int" />
+              <xs:element minOccurs="0" name="idKorisnik" type="xs:int" />
+              <xs:element minOccurs="0" name="korisnickoIme" type="xs:string" />
+              <xs:element minOccurs="0" name="ime" type="xs:string" />
+              <xs:element minOccurs="0" name="prezime" type="xs:string" />
+              <xs:element minOccurs="0" name="ePosta" type="xs:string" />
+              <xs:element minOccurs="0" name="telefon" type="xs:string" />
+              <xs:element minOccurs="0" name="lozinka" type="xs:string" />
+              <xs:element minOccurs="0" name="pocetnaLozinka" type="xs:string" />
+              <xs:element minOccurs="0" name="brojPokusaja" type="xs:int" />
+              <xs:element minOccurs="0" name="zakljucanNalog" type="xs:boolean" />
+              <xs:element minOccurs="0" name="aktivacioniLink" type="xs:string" />
+              <xs:element minOccurs="0" name="vremeKreiranja" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="vremePoslednjegPristupa" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="slika" type="xs:string" />
+              <xs:element minOccurs="0" name="idFirmaKorisnik" type="xs:int" />
+              <xs:element minOccurs="0" name="status" type="xs:boolean" />
+              <xs:element minOccurs="0" name="id" type="xs:int" />
+              <xs:element minOccurs="0" name="naziv" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtInt32">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="broj" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtdbo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="id" type="xs:int" />
+              <xs:element minOccurs="0" name="id1" type="xs:int" />
+              <xs:element minOccurs="0" name="id2" type="xs:int" />
+              <xs:element minOccurs="0" name="broj" type="xs:int" />
+              <xs:element minOccurs="0" name="broj1" type="xs:int" />
+              <xs:element minOccurs="0" name="broj2" type="xs:int" />
+              <xs:element minOccurs="0" name="broj3" type="xs:int" />
+              <xs:element minOccurs="0" name="naziv" type="xs:string" />
+              <xs:element minOccurs="0" name="naziv1" type="xs:string" />
+              <xs:element minOccurs="0" name="naziv2" type="xs:string" />
+              <xs:element minOccurs="0" name="naziv3" type="xs:string" />
+              <xs:element minOccurs="0" name="naziv4" type="xs:string" />
+              <xs:element minOccurs="0" name="skraceniNaziv" type="xs:string" />
+              <xs:element minOccurs="0" name="punNaziv" type="xs:string" />
+              <xs:element minOccurs="0" name="link" type="xs:string" />
+              <xs:element minOccurs="0" name="sifra" type="xs:string" />
+              <xs:element minOccurs="0" name="text1" type="xs:string" />
+              <xs:element minOccurs="0" name="text2" type="xs:string" />
+              <xs:element minOccurs="0" name="status" type="xs:boolean" />
+              <xs:element minOccurs="0" name="status1" type="xs:boolean" />
+              <xs:element minOccurs="0" name="idKorisnikUnos" type="xs:int" />
+              <xs:element minOccurs="0" name="vremeUnos" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="brojDecimal" type="xs:decimal" />
+              <xs:element minOccurs="0" name="brojDecimal1" type="xs:decimal" />
+              <xs:element minOccurs="0" name="Datum" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="Datum1" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="Datum2" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

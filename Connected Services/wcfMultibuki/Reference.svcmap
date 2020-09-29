@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cf67cda7-0566-4e1f-90ad-571077a4e474" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/Multibuki/MultibukiWcf/WcfMultibuki/wcfMultibuki.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="dsIzlaz.xsd" MetadataType="Schema" ID="6015b0cc-f0cf-4f30-8898-1419dce5c483" SourceId="1" SourceUrl="http://localhost/Multibuki/MultibukiWcf/WcfMultibuki/wcfMultibuki.svc?xsd=xsd4" />
+    <MetadataFile FileName="wcfMultibuki.xsd" MetadataType="Schema" ID="8c277bef-e9bc-45fb-b3a7-01416a21149d" SourceId="1" SourceUrl="http://localhost/Multibuki/MultibukiWcf/WcfMultibuki/wcfMultibuki.svc?xsd=xsd3" />
+    <MetadataFile FileName="wcfMultibuki.disco" MetadataType="Disco" ID="111be4fc-ad3a-4b34-8732-7bcf116a4c7b" SourceId="1" SourceUrl="http://localhost/Multibuki/MultibukiWcf/WcfMultibuki/wcfMultibuki.svc?disco" />
+    <MetadataFile FileName="wcfMultibuki1.xsd" MetadataType="Schema" ID="dde6d08a-4e53-49c2-b2bf-7ebb3bbbd262" SourceId="1" SourceUrl="http://localhost/Multibuki/MultibukiWcf/WcfMultibuki/wcfMultibuki.svc?xsd=xsd0" />
+    <MetadataFile FileName="wcfMultibuki2.xsd" MetadataType="Schema" ID="4e9c2dee-0ed9-46c9-8fee-57720e045e29" SourceId="1" SourceUrl="http://localhost/Multibuki/MultibukiWcf/WcfMultibuki/wcfMultibuki.svc?xsd=xsd1" />
+    <MetadataFile FileName="dsUlaz.xsd" MetadataType="Schema" ID="ab48b689-5859-4f46-bc40-269c0369d146" SourceId="1" SourceUrl="http://localhost/Multibuki/MultibukiWcf/WcfMultibuki/wcfMultibuki.svc?xsd=xsd2" />
+    <MetadataFile FileName="wcfMultibuki.wsdl" MetadataType="Wsdl" ID="a09cd951-2e9e-4be1-bdae-09943e42e72d" SourceId="1" SourceUrl="http://localhost/Multibuki/MultibukiWcf/WcfMultibuki/wcfMultibuki.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,253 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Multibuki.master.cs" Inherits="MultibukiWeb.Master.Multibuki" %>
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
+
+<script src="../Scripts/ajax.js"></script>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Multibuki</title>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>  
+
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Tanja Davidov">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css" rel="stylesheet" />  
+     
+   
+    <link rel="icon" href="~/Images/h2o.png" />
+
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
+
+    <!-- Bootstrap core CSS -->
+   <link href="~/CSS/bootstrap.min.css" rel="stylesheet" />
+
+      <!-- Custom styles for this template -->   
+    <link href="~/CSS/simple-sidebar.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="~/CSS/stilovi.css" />
+
+    
+
+    <style type="text/css">
+    /*    #OsnovniMenu a {
+            color: white !important;
+            font-weight: 600 !important;
+            text-decoration: none;
+            display: block;
+            white-space: normal !important;
+        }
+
+        .list-group-flush:last-child .list-group-item:last-child {
+            margin-bottom: unset !important;
+            border-bottom: unset !important;
+        }*/
+
+         .meniLeaf{
+            font-weight: 600;
+            width: 240px !important;
+            color: white !important;
+            background-color: #068c7c !important;
+            border-bottom: 1px solid white;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+        }
+
+        .meniLeaf:hover{
+            font-weight: 600;
+            width: 240px !important;
+            color: #FFD700 !important;
+            text-decoration: none;
+        }
+    </style>
+
+
+    <script type="text/javascript">
+        function openHelpPage(link) {
+            open(link, "Uputstvo", "status=1, scrollbars=1, resizable=1, width=1000, height=700, top=100, left=100");
+        }
+    </script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
+         <header id="top">
+            <div class="row21">
+              <div id="logo"><a href="http://rs.zepter.com/MainMenu/Products/HomeCare/Cleansy-Water/ProductRange.aspx" target="_blank"><img src="../../Images/h2o.png" /></a></div>
+
+            <div id="naslov">
+                  <asp:Label ID="Label3" runat="server" Text=""
+                    Font-Bold="True" ForeColor="black"></asp:Label>
+               <br />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       
+                    <asp:Label ID="Label4" runat="server" Font-Bold="True" ForeColor="black"> </asp:Label>
+             </div>
+           
+          
+              <div id="tabela1" class="ml-auto">
+                <div class="row">
+                  <div class="text-center">
+
+                    <div style="float: left !important; padding-top: 3px; padding-right: 15px;">
+                        <asp:Image ID="Image1" CssClass="imageUser" runat="server" Height="65px" Width="65px" />
+                    </div>
+                    
+                    <div style="float: right !important; ">
+                        <asp:LinkButton ID="lbtnKorisnik" runat="server" Visible="true" Font-Bold="True" ForeColor="black" OnClick="lbtnKorisnik_Click"></asp:LinkButton>
+                        <div style="padding-top: 10px;"></div>
+                        <asp:LinkButton ID="lbtnOdjava" CssClass=" btn-danger" Width="150px" runat="server" Visible="true" Font-Bold="True" ForeColor="white" OnClick="lbtnOdjava_Click"><i class="fas fa-power-off"></i>Odjavite se</asp:LinkButton>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <asp:LinkButton ID="lnkPomoc" Visible="false" runat="server" OnClick="lnkPomoc_Click" ForeColor="#C3010D">Помоћ</asp:LinkButton>
+                <asp:Label ID="lblStatus" runat="server" ForeColor="#002079"></asp:Label>
+                <asp:HiddenField ID="lblUsrName" runat="server" />
+            </div>
+          </header>
+
+
+
+
+        <div class="d-flex" id="wrapper">
+
+                    <div class="bg-light border-right" id="sidebar-wrapper">
+              <div class="sidebar-heading" >
+                <!-- <div style="display: inline-block; padding-left: 0.75rem;"> -->
+                  <div class="middle" >
+                        <a class="btnSocial" href="https://www.facebook.com/GradBeograd/" target="_blank">
+                          <i class="fab fa-facebook-f" ></i>
+                        </a>
+                        <a class="btnSocial" href="https://twitter.com/beograd_rs?lang=en" target="_blank" >
+                          <i class="fab fa-twitter" ></i>
+                        </a>
+                        <a class="btnSocial" href="https://www.instagram.com/grad_beograd/?hl=en" target="_blank" >
+                          <i class="fab fa-instagram" ></i>
+                        </a>
+                        <a class="btnSocial" href="https://chats.viber.com/gradbeograd" target="_blank" >
+                          <i class="fab fa-viber" ></i>
+                        </a>
+                  </div>
+                <!-- </div> -->
+              </div>
+              <div class="list-group list-group-flush" >
+               <%-- <asp:Menu ID="OsnovniMenu" runat="server" DataSourceID="menuXMLDS"
+                    Font-Bold="True" ForeColor="#002079" ItemWrap="True">
+                    <StaticMenuItemStyle ItemSpacing="4px" CssClass="list-group-item list-group-item-action bg-light" />
+                    <DataBindings>
+                        <asp:MenuItemBinding DataMember="siteMap" NavigateUrlField="Url" TextField="Funkcija"
+                            ValueField="Funkcija" />
+                    </DataBindings>
+                    <StaticHoverStyle BackColor="White" />
+                </asp:Menu>--%>
+
+    <asp:UpdatePanel ID="UpdatePanel5" runat="server">
+                    <ContentTemplate>
+                      <asp:TreeView ID="TreeView1" runat="server"  NodeWrap="True" ExpandDepth="0"
+                          OnSelectedNodeChanged="TreeView1_SelectedNodeChanged" ShowExpandCollapse="False" LeafNodeStyle-HorizontalPadding="15px" 
+                          RootNodeStyle-HorizontalPadding="15px" RootNodeStyle-VerticalPadding="10px" LeafNodeStyle-VerticalPadding="10px" 
+                          LeafNodeStyle-CssClass="meniLeaf" RootNodeStyle-CssClass="meniLeaf" NodeStyle-CssClass="meniLeaf" 
+                          ParentNodeStyle-CssClass="meniLeaf" NodeStyle-HorizontalPadding="15px" NodeStyle-VerticalPadding="10px" 
+                          ParentNodeStyle-HorizontalPadding="15px" ParentNodeStyle-VerticalPadding="10px">
+                      </asp:TreeView>
+
+                        <script type="text/javascript" lang="javascript">
+                            window.onbeforeunload = function () {
+                                try {
+                                    // The expanded state of the treeview is available in the hidden input
+                                    // ..._ExpandState. Store that string in a cookie so we have it on the server
+                                    // side when the page is loaded in order to restore the state of the treeview.
+                                    var expInfo = document.getElementById('<%=TreeView1.ClientID%>' + '_ExpandState');
+                                    if (expInfo) {
+                                        createCookie('ToolsTVExpand', expInfo.value, 365);
+                                    }
+                                }
+                                catch (err) {
+                                    // Ignore the error
+                                }
+                            }
+                            function createCookie(name, value, days) {
+                                if (days) {
+                                    var date = new Date();
+                                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                                    var expires = "; expires=" + date.toGMTString();
+                                }
+                                else var expires = "";
+                                document.cookie = name + "=" + value + expires + "; path=/";
+                            }
+                        </script>
+
+
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+
+
+
+              </div>
+            </div>
+
+             <!-- Page Content -->
+               <div id="page-content-wrapper">
+
+              <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom" >
+                <button class="btn " id="menu-toggle">
+                  <!-- Toggle Menu -->
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div id="nazivStranice1">
+                    <asp:Label ID="lblNaslov" runat="server" Font-Bold="True" ForeColor="black"></asp:Label>
+                </div>              
+              </nav>
+
+              <div class="container-fluid" >
+              <!-- Ovde se unose Web Forme -->
+                  <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        </asp:ContentPlaceHolder>
+                
+              <!-- Kraj unosa Web Formi -->
+              </div>
+            </div>
+             <!-- /#page-content-wrapper -->
+        </div>
+
+            <!-- Footer -->
+         <footer class="page-footer font-small bg-light fixed-bottom ">
+            <!-- Copyright -->
+            <div class="footer-copyright text-center">© <a href="https://www.zepter.rs/Home/Clean-water" target="_blank">Multibuki</a>, Batajnica
+            </div>
+            <!-- Copyright -->
+          </footer>
+          <!-- Footer -->
+
+        <asp:XmlDataSource ID="menuXMLDS" runat="server" EnableCaching="False" XPath="/*/*"></asp:XmlDataSource>
+
+    </form>
+
+      <!-- Bootstrap core JavaScript -->    
+    <script lang="javascript" type="text/javascript" src="../Scripts/bootstrap.bundle.min.js"></script>
+    
+    <!-- Menu Toggle Script -->
+    <script lang="javascript" type="text/javascript">
+        $(document).ready(function () {
+            $("#menu-toggle").click(function (e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+        })
+     </script>
+
+
+
+</body>
+</html>

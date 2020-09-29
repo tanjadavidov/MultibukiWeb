@@ -1,0 +1,495 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+body {
+  overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+  min-height: calc(100vh - 125px);
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+
+  border: none !important;
+  /*background-color: #dacef2 !important;*/
+  background-color: rgba(189, 255, 247, .9) !important;
+  
+  /*background-color: #5C8FC6 !important;*/
+}
+
+#sidebar-wrapper .sidebar-heading {
+  /*padding: 0.875rem 1.25rem;*/
+  font-size: 1.2rem;
+  font-weight: 500;
+
+  background-color: #0074d9 !important;
+  /*background-image: linear-gradient(to bottom, #bfe6f2, #a4f5a4);*/
+  border-right: 1px solid white !important;
+  color: white;
+}
+
+.list-group-flush{
+  padding-bottom: 10px;
+}
+
+.list-group-flush .list-group-item{
+  font-size: 15px;
+
+  border-top: 1px solid white !important;
+  border-bottom: 1px solid white !important;
+  border-right: 1px solid white !important;
+  background-color: #068c7c !important;
+  color: white;
+}
+
+.list-group-flush .list-group-item:hover, .list-group-flush .list-group-item:focus{
+  color: white;
+  background-color: #006155 !important;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+
+
+header{
+  padding: 10px ;
+  box-sizing: border-box;
+}
+
+.row21{
+  display: flex;
+}
+
+#top{
+  /*background-color: #0074d9;*/
+  /*border-bottom: 1px solid #dee2e6!important;*/
+
+  background-image: linear-gradient(to bottom, rgb(23, 241, 215), rgb(189, 255, 247)) !important;
+  /*background-image: linear-gradient(to bottom, rgb(147,112,219), rgb(218,206,242)) !important;*/
+  border-bottom: 1px solid white !important;
+  color: white;
+}
+
+.imageUser {
+    border-radius: 50%;
+}
+
+.navbar{
+  /*background-color: #0074d9 !important;*/
+
+  background-image: linear-gradient(to bottom, rgb(189, 255, 247), rgb(23, 241, 215)) !important;
+  /*background-image: linear-gradient(to bottom, rgb(218,206,242), rgb(147,112,219)) !important;*/
+  border-bottom: 1px solid white !important;
+}
+
+#top .row21 #logo img{
+  margin-left: 50%; 
+  transform: translateX(-50%);
+}
+
+#logo{
+  width: 220px;
+}
+
+#naslov{   
+  float: left;
+  padding-left: 20px;
+}
+
+#tabela1{
+  padding-right: 15px;
+}
+
+#userImage{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-top: 3px;
+  margin-right: 5px;
+}
+
+.navbar #menu-toggle .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#nazivStranice1{
+  text-align: center; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+#nazivStranice1 h5{
+  color: white;
+  text-shadow: -2px 0 #fb2525, 0 2px #fb2525, 2px 0 #fb2525, 0 -2px #fb2525;
+  letter-spacing: 1px;
+}
+
+#nazivStranice2{
+  display: none;
+}
+
+.page-footer .footer-copyright{
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.footer-copyright a{
+  color: white;
+}
+
+#user p{
+  font-size: 17px; 
+  color: white; 
+  font-weight: 500; 
+  padding-top: 7px; 
+  padding-bottom: 12px;
+}
+
+#user p:hover{
+  text-decoration: underline white;
+}
+
+.btn-danger{
+  width: 100px; 
+  height: 30px; 
+  padding: 0px;
+}
+
+.fa-power-off{
+  font-size: 12px; 
+  padding-right: 7px;
+}
+
+.list-group{
+  font-weight: 600;
+}
+
+.container-fluid{
+  padding-bottom: 5px;
+}
+
+/*Galrija ovo nije master strana vec deo unutar nje*/
+.carousel-item{
+  height: 290px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 45px;
+  color: gray;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 45px;
+  color: gray;
+}
+/*Kraj galerije*/
+
+/*Tekstualna polja ispod glaerije*/
+p {
+  margin-bottom: 0;
+  color: black;
+}
+
+.row {
+  padding-bottom: 15px;
+}
+
+.buttonBuy {
+  padding: 10px;
+  color: white;
+  background-color: #0069d9;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.buttonBuy:hover {
+  padding: 10px;
+  color: white;
+  background-color: #0050a6;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+/*Kraj polja*/
+
+/*Plava senka kad se klikne na tekstualno polje*/
+.glowing-border {
+  border: 1px solid gray;
+  border-radius: 1px;
+  padding-left: 5px;
+  font-size: 14px !important;
+  font-family:sans-serif !important;
+}
+
+.glowing-border:focus { 
+  outline: none;
+  /*border-color: #9ecaed;*/
+  border-color: #006155;
+  /*box-shadow: 0 0 10px #9ecaed;*/
+  box-shadow: 0 0 10px #006155;
+  padding-left: 5px;
+  font-size: 14px !important;
+  font-family:sans-serif !important;
+}
+/*Kraj plave senke*/
+
+/*Strelica za ugnjezdeni meni*/
+.dropdown-btn {
+  font-weight: 600;
+  /*color: #495057 !important;*/
+
+  color: white !important;
+}
+
+/* On mouse-over */
+/*.dropdown-btn:hover {
+  background-color: #dae0e5 !important;
+}*/
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding: .2rem;
+  color: white;
+}
+
+/*Ugnjezdeni meni*/
+.dropdown-container a{
+  font-weight: 600;
+  /*color: #495057 !important;*/
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  /*border: 1px solid #dee2e6!important;*/
+
+  border-left: 1px solid white !important;
+  border-right: 1px solid white !important;
+  border-bottom: 1px solid white !important;
+  color: white !important;
+  margin-left: 1.25rem;
+  padding: .75rem 1rem;
+  background-color: #0074d9 !important;
+}
+
+.dropdown-container a:hover, .dropdown-container a:focus{
+  /*background-color: #dae0e5 !important;*/
+
+  background-color: #0050A6 !important;
+}
+/*Kraj ugnjezdenog menija*/
+
+footer{
+  /*border-top: 1px solid #dee2e6!important;*/
+  
+  border-top: 1px solid white !important;
+}
+
+.footer-copyright{
+  background-color: #068c7c !important;
+  color: white;
+}
+
+/*Social Media*/
+.middle{
+  text-align: center;
+  background-image: linear-gradient(to bottom, rgb(189, 255, 247), rgb(23, 241, 215)) !important;
+  border-bottom: 1px solid white;
+  /*background-image: linear-gradient(to bottom, rgb(218,206,242), rgb(147,112,219)) !important;*/
+}
+.btnSocial {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #f1f1f1;
+    margin: 4px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px -5px #013d36;
+    color: #013d36;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid white;
+}
+.btnSocial i{
+  line-height: 39px;
+  font-size: 20px;
+  transition: 0.2s linear;
+}
+.btnSocial:hover i{
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+
+.btnSocial::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #013d36;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+.btnSocial:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+@keyframes aaa {
+  0%{
+    left: -110%;
+    top: 90%;
+  }50%{
+    left: 10%;
+    top: -30%;
+  }100%{
+    top: -10%;
+    left: -10%;
+  }
+}
+/*Kraj Social Media*/
+
+@media(max-width: 1196px){
+    .razmak{
+        padding-top: 16px;
+    }
+}
+
+@media(max-width: 500px){
+  #top .row21 img{
+    /*padding-left: 10px;*/
+    padding-left: 0px !important;
+  }
+
+  #userImage{
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+  }
+
+  #nazivStranice1{
+    display: none;
+  }
+  #nazivStranice2{
+    display: inherit;
+  }
+  #nazivStranice2 h5{
+    font-size: 16px;
+    color: white;
+  }
+  #naslov{
+    display: none;
+  }
+
+  .page-footer .footer-copyright{
+    font-size: 9px;
+  }
+
+    .imageUser {
+        display: none;
+    }
+}
+
+@media(max-width: 350px) {
+    .dugmeMobilni150{
+        width: 120px !important;
+    }
+}
+
+@media(max-width: 768px){
+  #naslov h3{
+    display: none;
+  }
+  #naslov h4{
+    font-size: 16px;
+    padding-top: 30px;
+  }
+}
+
+@media(max-width: 925px){
+  #top .row21 #logo img{
+    margin-left: 0%; 
+    transform: translateX(-0%);
+    padding-left: 20px;
+  }
+
+  #logo{
+    width: auto;
+  }
+}
+
+@media(max-width: 1050px){
+  #naslov h3{
+    font-size: 20px;
+  }
+  #naslov h4{
+    font-size: 18px;
+  }
+  #nazivStranice1 h5{
+    font-size: 16px;
+  }
+}
+
+
+
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+
+
